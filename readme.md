@@ -4,4 +4,9 @@ All the study materials will be based on a [Roadmap](https://roadmap.sh/ "Roadma
 
 ## Frontend Developper Roadmap
 * [ ] Internet
+* [ ] HTML
+* [ ] CSS
+* [ ] JavaScript
+  * [ ] Test
+
 
