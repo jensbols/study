@@ -100,8 +100,3 @@ npm start
 * [x] Task 1
 * [x] Task 2
 * [ ] Task 2
-
-
-
-
-  
