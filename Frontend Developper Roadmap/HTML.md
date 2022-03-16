@@ -93,14 +93,106 @@ Special characters that don't get recognized without special syntax.
 ### Links
 `<a href=""></a>`
 
-`<a href=" company/about.html"></a>`
+`<a href="company/about.html"></a>`
 
 `<a href="images/mosh.jpg" download></a>`
 
 = Known as anchor tags, let's you add links to the href section
 
+`<a href="#section-id"></a>`
+
+`<a href="#"></a>`
+
+`<a href="https://google.com" target="_blank"></a>`
+
+`<a href="mailto:jens.bols@hotmail.com"></a>`
+
+= adding an id to an element and referencing it in an anchor tag like above will make it a link to a place in a page. 
+
+Using `#` creates a link to the top of the page.
+
+Using `target="_blank"` opens the link in a new tab.
+
 ### Images
+
+Best practice to use discriptive image names.
+
+`<image src="" alt="">`
+
+It is important to give a good alternative text, this is for visually impaired users.
+
+Styling should be added in css classes.
+
+> `object-fit: cover` is usefull for making images fit
+
 ### Lists & Tables
-### container elements
-### Structural elements
+#### Tables
+```HTML
+<table>
+  <tr>
+    <th>Company</th>
+    <th>Contact</th>
+    <th>Country</th>
+  </tr>
+  <tr>
+    <td>Alfreds Futterkiste</td>
+    <td>Maria Anders</td>
+    <td>Germany</td>
+  </tr>
+  <tr>
+    <td>Centro comercial Moctezuma</td>
+    <td>Francisco Chang</td>
+    <td>Mexico</td>
+  </tr>
+</table>
+```
+
+#### Lists
+```HTML
+UnOrdered List
+<ul>
+  <li>Coffee</li>
+  <li>Tea</li>
+  <li>Milk</li>
+</ul>
+
+Ordered List
+<ol>
+  <li>Coffee</li>
+  <li>Tea</li>
+  <li>Milk</li>
+</ol>
+```
+
+### Container elements
+
+`<div></div>`
+
+A container for a block of content.
+
+`<span></span>`
+
+A container for in-line content, such as content inside a paragraph.
+### Structural elements | Semantic Elements
+
+A semantic or structural element describes its meaning to both the browser and the developer.
+
+Examples of **non-semantic** elements: `<div> & <span>`
+Examples of **semantic** elements: `<form>, <table>, <article>, <nav>,..`
+
+![Semantic Elements](/images/semanticElements.png)
+
+`<section>`
+
+Defines a section in a document. It's a thematic grouping of content, typically with a heading.
+
+ex. Chapters, Introduction, News Items, Contact information.
+
+`<article>`
+
+Specifies independent, self-contained content. An article should make sense on its own, and it should be possible to distribute it independently from the rest of the website.
+
+ex. Forum posts, Blog posts, User comments, Product cards, Newspaper articles
+
+
 
