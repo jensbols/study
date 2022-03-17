@@ -8,11 +8,9 @@ All the study materials will be based on a [Roadmap](https://roadmap.sh/ "Roadma
     * [x] Browsers  
     * [x] DNS
     * [x] Hosting
-    
 * [X] HTML
     * [x] Essential HTML elements
 * [ ] CSS
 * [ ] JavaScript
-  * [ ] Test
 
 

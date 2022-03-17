@@ -195,4 +195,33 @@ Specifies independent, self-contained content. An article should make sense on i
 ex. Forum posts, Blog posts, User comments, Product cards, Newspaper articles
 
 
+## Forms and Validations
+
+```HTML
+<form action="results.html" method="GET">
+  <div>
+    <label>Name</label>
+    <input>
+  </div>
+  <div>
+    <label>Password<label>
+    <input>
+  </div>
+  <button>Submit</button>
+</form>
+```
+
+All inputs between `<form></form>` will be submited to wherever you send your form. By default if you leave it blank it will submit it to the page you are currently on.
+
+We need a way to submit the form so you always need a button. To set a location to send the form you need to add an `<form action="">`attribute.
+
+By adding a method to the form you are specifying wether you want to append things to the url and send it to another page on your site by using a `method="GET"` method. `method="POST"` will be usefull if you have a server and want to save information.
+
+If you don't add a `name="name"` label to inputs there is no way of knowing what information is what.
+
+You will also see those parameters in the URL when using a GET request.
+
+You should add `for="inputId"` labels in label elements. this helps screenreaders and users. Also add an ID to the input field `id="inputId"`.
+
+
 
