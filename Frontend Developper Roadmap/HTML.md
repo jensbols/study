@@ -272,6 +272,11 @@ add `enctype="multipart/form-data"` to the `<form>`tag. files can be large so ad
 `<input type="color" ...>`
 
 
+## Best Practices
+
+[Best Practices](https://github.com/hail2u/html-best-practices)
+
+
 
 
 
