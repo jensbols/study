@@ -207,7 +207,7 @@ ex. Forum posts, Blog posts, User comments, Product cards, Newspaper articles
     <label>Password<label>
     <input>
   </div>
-  <button>Submit</button>
+  <button type="submit">Submit</button>
 </form>
 ```
 
@@ -222,6 +222,64 @@ If you don't add a `name="name"` label to inputs there is no way of knowing what
 You will also see those parameters in the URL when using a GET request.
 
 You should add `for="inputId"` labels in label elements. this helps screenreaders and users. Also add an ID to the input field `id="inputId"`.
+
+An alternative to using Ids, you can wrap the input field with `<label>` tag.
+
+### Input types
+
+It is important that you specify the type of the input data. You should also match input fields by using an id reffering to the label.
+
+`<input type="text" value="defaultValue" placeholder="username" required>`
+
+`<input type="email">` basic email validation and gives different keyboard for mobile phones. 
+
+`<input type="password" required>` hides the characters
+
+`<button type="submit">` submit the form by using enter or clicking the button. 
+
+`<button type="reset">` reset the form to default.
+
+`<input type="number" name="age" id="age" min="1" max="200" step="1">` jump numbers by step
+
+`<input type="date" name="date" id="date" min="2019-06-10">`
+
+`<input type="checkbox" name="banana" id="banana">` allows multiple checkboxes to be checked
+
+`<input type="radio" name="gender" id="male" value="male">` share the same name to get a grouped radio button
+
+`<input type="radio" value="female ...">` the value property makes it so when the form gets sent the format will be `gender: value`
+
+```HTML
+<select name="eyeColor" id="eyeColor" multiple>
+  <option value="Green">Green</option>
+  <option label="Red" value="Red"></option>
+</select>
+```
+Multiple flag allows to select multiple options using control+click.
+
+`<textarea id="bio"></textarea>` add default value between tags.
+
+`<input type="hidden" name="hidden" value="hi">` allows hidden input the user can't see
+
+`<input type="file" ...>` 
+
+add `enctype="multipart/form-data"` to the `<form>`tag. files can be large so adding this argument sends the form in multiple packets.
+
+`<input type="tel" ...>` on phone will give special numpad
+
+`<input type="url" ...>`
+
+`<input type="color" ...>`
+
+
+
+
+
+
+
+
+
+
 
 
 
