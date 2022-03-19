@@ -1,5 +1,7 @@
 # HTML
 
+[HTML Cheatsheet](https://htmlcheatsheet.com/) alot of good examples.
+
 **HyperText Markup Language**
 
 We use HTML to give structure to our webpages, you can see them as building blocks.
@@ -180,7 +182,7 @@ A semantic or structural element describes its meaning to both the browser and t
 Examples of **non-semantic** elements: `<div> & <span>`
 Examples of **semantic** elements: `<form>, <table>, <article>, <nav>,..`
 
-![Semantic Elements](/images/semanticElements.png)
+![Semantic Elements](/images/HTML/semanticElements.png)
 
 `<section>`
 
