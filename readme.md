@@ -12,13 +12,14 @@ All the study materials will be based on a [Roadmap](https://roadmap.sh/ "Roadma
     * [x] Essential HTML elements
     * [x] Forms and validations
     * [x] Best Practices  
-* [ ] CSS
+* [X] CSS
     * [X] Floats
     * [X] Positioning
     * [X] Display
     * [X] Box Model
-    * [ ] Flex Box
-    * [ ] CSS Grid
+    * [X] Flex Box
+    * [X] CSS Grid
+    * [X] Responsive Design and Media Queries
 * [ ] JavaScript
 
 
