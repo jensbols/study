@@ -256,8 +256,21 @@ most common:
 
 The order is really important.
 
+## Pseudo Elements
+
+`::before` & `::after` allow you to add elements strictly from CSS right before or right after an element.
+
+usage: `classname::before`
+
+![Pseudo Elements](../images/CSS/pseudoelements.PNG)
 
 
+You can only use pseudo elements on elements that have content.
+
+
+example: `*` after every required field in a form. `required::after { content: '*';}` now you can use the required class easily.
+
+![Tool tip on hover](../images/CSS/tooltiphover.PNG)
 
 
 
