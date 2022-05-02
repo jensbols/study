@@ -59,4 +59,51 @@ public class JDBCPostgreSQLConnect {
 	}
 ```
 
+
+```JAVA
+Connection conn = null;
+		String url = "jdbc:postgresql://localhost:5432/CSV";
+		Properties props = new Properties();
+		props.put("user", "postgres");
+		props.put("password", "root");
+		props.put("currentSchema", "csv");
+		props.put("stringtype", "unspecified");
+```
+
 https://programs.wiki/wiki/jdbc-core-technology-and-how-to-encapsulate-data.html
+
+
+
+
+Singleton Connection
+
+```JAVA
+private static Connection conn;
+
+	public static Connection getConnection() throws SQLException {
+		if (conn == null || conn.isClosed()) {
+			conn = establishNewConnection();
+		}
+		return conn;
+	}
+
+	private static Connection establishNewConnection() {
+		Connection conn = null;
+		String url = "jdbc:postgresql://localhost:5432/CSV";
+		Properties props = new Properties();
+		props.put("user", "postgres");
+		props.put("password", "root");
+		props.put("currentSchema", "csv");
+		props.put("stringtype", "unspecified");
+
+		try {
+			conn = DriverManager.getConnection(url, props);
+			System.out.println("Connected to db");
+		} catch (Exception e) {
+			System.out.println("something went wrong connecting to db");
+			e.printStackTrace();
+		}
+		
+		return conn;
+	}
+```
